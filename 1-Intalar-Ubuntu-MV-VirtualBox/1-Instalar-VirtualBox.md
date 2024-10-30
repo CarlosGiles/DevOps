@@ -1,4 +1,11 @@
-# VirtualBox
+# Creación de Máquina Virtual con Debian
+Pasos a generales a seguir:
+1. Descargar software VirtualBox
+2. Descargar iso de Debian 12
+3. Instalar VirtualBox
+4. Crear máquina virtual (MV) asignando la imagen de Debian 12 como sistema operativo
+5. Arrancar la MV e instalar Debian
+## VirtualBox
 Es un programa para virtualizar máqunias con un determinado sistema operativo (dentro de tu sistema operativo). Puedes [descargar](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html) el software.
 ## Debian 12
 VirtualBox necesita un sistema operativo para esa máquina virtual, en este caso, instalaremos **Debian 12** disponible [aquí](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.7.0-amd64-netinst.iso). Debian es un sistema operativo con alta compatibilidad de aplicaciones, tales como Docker que lo usaremos más adelante.
@@ -63,3 +70,31 @@ Ya con VirtualBox abierto:
 ![image](https://github.com/user-attachments/assets/df1da8e9-942e-4b8e-b02c-7d0e34ab9726)
 * Seleccionamos **Sí** y *Continuar*:
 ![image](https://github.com/user-attachments/assets/97e2d4e6-e8ed-4925-b513-92c8b07d37de)
+* Al terminar nos saldrá esta ventana, elegimos *no* y *Continuar*:
+![image](https://github.com/user-attachments/assets/7d99722c-3135-4d22-b14d-58688961e7af)
+* Elegimos el gestor de paquetes, el más cercano a donde estemos convenientemente:
+![image](https://github.com/user-attachments/assets/79c4935a-25b7-4c3d-95c4-2c43781659c6)
+* Elegimos el gestor oficial:
+![image](https://github.com/user-attachments/assets/962aa48f-bcd4-4d6e-a021-8abcfe87b83a)
+* Si nuestra red es normal y no tenemos proxy, dejamos en blanco y continuar:
+![image](https://github.com/user-attachments/assets/52657b95-690d-4ef7-9a58-407d40d36a64)
+* Puede que nos pregunte si participamos en la encuesta de paquetes, elegimos no.
+* En selección de programas seleccionamos SSH Server y Utilidades. Como nuestra MV será un servidor, no necesitamos lo demás:
+![image](https://github.com/user-attachments/assets/aebec2ac-a04f-4f43-a62b-570254b034f3)
+* En la siguiente ventana instalamos el **GRUB**, una panel de inicio que nos permite elegir opciones de arranque, sistema, kernels, etc, antes de entrar al sistema operativo.
+![image](https://github.com/user-attachments/assets/497095c7-1a1b-4d48-8fcb-628e9092cad8)
+* Elegimos nuestro disco para el arranque del **GRUB**:
+![image](https://github.com/user-attachments/assets/f7fb1ac5-ab0b-4bf1-8b48-95bf7714ed31)
+* En el siguiente paso, debemos extraer nustro disco de instalación (la imagen iso) antes de terminar y reiniciar. Debemos ir a Dispositivos > Unidades ópticas > debian-12.iso:
+![image](https://github.com/user-attachments/assets/28a91f73-ab55-409e-83da-0c894d1d85ca)
+* Ahora Dispositivos > Unidades ópticas > Eliminar disco:
+![image](https://github.com/user-attachments/assets/cb18bb33-1526-4588-8362-4b670de7cda4)
+* Continuar:
+<img width="459" alt="image" src="https://github.com/user-attachments/assets/3af0daa2-964c-40b0-98a5-74fbcba9603a">
+
+* Al reiniciarse la MV veremos el GRUB y damos enter en *Debian GNU/Linux:
+![image](https://github.com/user-attachments/assets/fcb00dd1-2090-4001-adb3-759d183a7523)
+* Cuando nos pida la contraseña para hacer login, estaremos ya en nuestro servidor Debian dentro de una máquina virtual:
+<img width="694" alt="image" src="https://github.com/user-attachments/assets/8b980112-5a9c-4545-8980-64a32de5cf36">
+
+La configuración del servidor e instalación de paquetes de explica en próximos documentos.
