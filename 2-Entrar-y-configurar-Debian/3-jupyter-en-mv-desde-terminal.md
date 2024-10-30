@@ -35,4 +35,4 @@ libncursesw5-dev xz-utils tk-dev libxmlsec1-dev libffi-dev liblzma-dev
 ## Instalación de Python en nuestro PYENV
 * Para saber las versiones disponibles ```pyenv install --list```
 ![image](https://github.com/user-attachments/assets/f399e6d6-828c-4e69-8282-d90e98c509a6)
-* Instalamos la siguiente versión ```pyenv install 3.11.10```
+* Instalamos la siguiente versión ```pyenv install 3.11.10``` (acá cambia el dominio de vagrant a debian debido a que tuve que hacer otra MV)
