@@ -37,3 +37,29 @@ Ya con VirtualBox abierto:
     |SSH|TCP|127.0.0.1|2222||22|
 * Click en *Aceptar*
 ## Arranque de la MV
+* Con la MV seleccionada, click en iniciar:
+![image](https://github.com/user-attachments/assets/8d42fe33-7f5f-49c3-92f1-ef2ab6bd3ab9)
+* Esperamos que arranque y enter en *Graphical install*:
+![image](https://github.com/user-attachments/assets/93af096e-4e1d-456e-b070-b213c4b83e0c)
+* Elegimos lenguaje, ubicación y configuración del teclado hasta llegar a *Configurar la red*. Para este caso se llamara vagrant la máquina:
+![image](https://github.com/user-attachments/assets/bf10c69d-1fb7-4e45-b6f7-74d056fc9836)
+* Mismo nombre en dominio:
+![image](https://github.com/user-attachments/assets/433d2796-0210-493e-be2a-f1cc702791a0)
+* Definimos una contraseña:
+![image](https://github.com/user-attachments/assets/106e72ce-3e5d-4794-94e2-23e580ab8e98)
+* Por defecto nos creará una cuenta de superusuario, acá debemos definir el nombre de un usuario que usaremos nosotros:
+![image](https://github.com/user-attachments/assets/8df7595a-6a66-4542-8b1a-34abbb85dc42)
+* Igualmente el nombre de la cuenta (puede ser el mismo del usuario):
+![image](https://github.com/user-attachments/assets/5927c76d-d91c-45d6-955d-111abec0d5a9)
+* Contraseña para este usuario que no es administrador o superusuario:
+![image](https://github.com/user-attachments/assets/e3f704ec-6094-42c8-83dc-1418991bd1c2)
+* Elegimos la configuración del reloj y llegaremos al particionado, elegimos la primera opción:
+![image](https://github.com/user-attachments/assets/b1748d50-9479-4d13-8a17-74627fa1cdcd)
+* Elegimos el disco a particionar, en este caso, es el disco virtual que creamos para la MV:
+![image](https://github.com/user-attachments/assets/8b0eb86b-ee75-41d3-9dcb-92079ef0f910)
+* En la siguiente ventana elegimos la primera opción:
+![image](https://github.com/user-attachments/assets/97af24c7-db56-4ba0-9b25-40794de10d52)
+* En la siguiente ventana elegimos la opción "*Finalizar el particionado...*" y *Continuar*:
+![image](https://github.com/user-attachments/assets/df1da8e9-942e-4b8e-b02c-7d0e34ab9726)
+* Seleccionamos **Sí** y *Continuar*:
+![image](https://github.com/user-attachments/assets/97e2d4e6-e8ed-4925-b513-92c8b07d37de)
