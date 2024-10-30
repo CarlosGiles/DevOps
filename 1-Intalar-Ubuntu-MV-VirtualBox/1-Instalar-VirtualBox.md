@@ -31,7 +31,9 @@ Ya con VirtualBox abierto:
 * * <img width="494" alt="image" src="https://github.com/user-attachments/assets/c184da44-529c-4536-a6cd-59f102483958">
 * En la ventana que se abre damos click en "+":
 *  * <img width="353" alt="image" src="https://github.com/user-attachments/assets/af115451-094c-40f7-bcbc-965ceb3363e3">
-* Agregamos la siguiente configuración para poder conectarnos a esta MV mediante la terminal de nuestro Windows 11:
+* Agregamos la siguiente configuración para poder conectarnos a esta MV mediante la terminal de nuestro Windows 11 y click en *Aceptar*:
 * * |Nombre|Protocolo|IP anfitrión|Puerto anfitrión|IP invitado|Puerto invitado|
     |------|---------|------------|----------------|-----------|---------------|
     |SSH|TCP|127.0.0.1|2222||22|
+* Click en *Aceptar*
+## Arranque de la MV
