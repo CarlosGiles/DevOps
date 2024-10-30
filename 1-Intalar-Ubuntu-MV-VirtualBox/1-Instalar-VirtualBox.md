@@ -23,7 +23,7 @@ Ya con VirtualBox abierto:
    ![image](https://github.com/user-attachments/assets/aa215978-339e-43b4-8167-4feabec4e4c4)
 3. En esta ventana como *Modo Experto* elegimos nombre de la MV, la imagen iso descargada de Debian y check en *Omitir instalación desatendida*:
    ![image](https://github.com/user-attachments/assets/b5abfa7a-a220-44a3-adc0-d000013cf80a)
-5. Click en la pestaña de **hardware** y configuramos la memoria y CPU's tal como aparece:
+5. Click en la pestaña de **hardware** y configuramos la memoria (entre 15 y 20 GB) y CPU's tal como aparece:
    ![image](https://github.com/user-attachments/assets/fd995893-b31d-4bf4-8076-dcfdaedacd33)
 6. En la sección de **Disco duro** configuramos 2GB y el tipo de disco **VMDK** y click en *Terminar*:
    ![image](https://github.com/user-attachments/assets/91c4b8a6-14ca-42bd-90b6-49533eb0d0ce)
