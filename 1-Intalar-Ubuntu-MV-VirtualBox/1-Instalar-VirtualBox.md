@@ -23,3 +23,15 @@ Ya con VirtualBox abierto:
 **¡Ahora está crearda la máquina virtual (MV)!:**
 ![image](https://github.com/user-attachments/assets/37af50bf-4c6b-46a7-987a-20ef1400334d)
 ## Configuración de red y audio de la MV
+* Seleccionamos nuestra MV y click en *Configuración*:
+* * <img width="573" alt="image" src="https://github.com/user-attachments/assets/e42ff6a7-3273-4244-a627-fcf8da121392">
+* En la sección de *Audio* deshabilitamos el audio:
+* * ![image](https://github.com/user-attachments/assets/67401c24-7e34-488b-be1a-142b48597b70)
+* En la sección de red, redireccionamos los puertos dando click en *Avanzado* y en *Reenvío de puertos*:
+* * <img width="494" alt="image" src="https://github.com/user-attachments/assets/c184da44-529c-4536-a6cd-59f102483958">
+* En la ventana que se abre damos click en "+":
+*  * <img width="353" alt="image" src="https://github.com/user-attachments/assets/af115451-094c-40f7-bcbc-965ceb3363e3">
+* Agregamos la siguiente configuración para poder conectarnos a esta MV mediante la terminal de nuestro Windows 11:
+* * |Nombre|Protocolo|IP anfitrión|Puerto anfitrión|IP invitado|Puerto invitado|
+    |------|---------|------------|----------------|-----------|---------------|
+    |SSH|TCP|127.0.0.1|2222||22|
