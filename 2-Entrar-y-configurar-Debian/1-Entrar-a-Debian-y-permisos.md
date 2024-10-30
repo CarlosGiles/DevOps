@@ -1,7 +1,7 @@
 # Uso del sistema operativo de linea de comandos Debian 12
 1. Login
 2. Permisos de usuario y superusuario
-3. 
+3. Instalar paquetes
 ## Login
 Al iniciar la MV y elegir *Debian GNU/Linux* en el **GRUB**, estaremos entrando al sistema de Debian 12 que hemos creado como servidor.
 * Nos aparecerá esta pantalla en la que debemos iniciar sesión con nuestra cuenta de usuario y contraseña creadas en la instalación, recordando que es un usuario no root.
