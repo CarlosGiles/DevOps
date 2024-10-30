@@ -15,7 +15,7 @@ El punto en ```/.pyenv``` indica que será un directorio oculto.
 ![image](https://github.com/user-attachments/assets/a125622d-7529-41b7-a29e-d187ea6b45f5)
 * Configurar la variable de entorno para **pyenv** modificando el archivo ```bashrc``` y que se reconozca ```pyenv``` como un comando, introducimos lo siguiente en la terminal:
 
-```
+```bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
@@ -26,7 +26,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 **Ahora tenemos instalado y configurado PYENV en la MV, por lo tanto el comando ```pyenv``` funciona en la terminal y pdremos instalar más de una versión de Python.**
 ## Dependencias necesarias
 Para poder instalar Python necesitamos ciertas dependencias que no tenemos por default en el sistema.
-```
+```bash
 sudo apt update; sudo apt install build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev curl git \
 libncursesw5-dev xz-utils tk-dev libxmlsec1-dev libffi-dev liblzma-dev
@@ -36,3 +36,15 @@ libncursesw5-dev xz-utils tk-dev libxmlsec1-dev libffi-dev liblzma-dev
 * Para saber las versiones disponibles ```pyenv install --list```
 ![image](https://github.com/user-attachments/assets/f399e6d6-828c-4e69-8282-d90e98c509a6)
 * Instalamos la siguiente versión ```pyenv install 3.11.10``` (acá cambia el dominio de vagrant a debian debido a que tuve que hacer otra MV)
+![image](https://github.com/user-attachments/assets/7b29e91f-626f-4104-a4db-2d7d0acd2fb7)
+## Activación de Python en nuestra sesión
+Las versiones de Python instaladas con **pyenv** deben ser activadas en un directorio específico en el que se usarán.
+* Crear directorio, entrar al directorio y activar python:
+```bash
+makdir jupyter
+cd jupyter
+pyenv local 3.11.10
+```
+![image](https://github.com/user-attachments/assets/6b304359-fe4e-4ad2-a0c4-c6b11a2a8592)
+* ahora si tecleamos ```python``` dentro de este directorio, se reconocerá el comando y se abrirá en interprete:
+![image](https://github.com/user-attachments/assets/672723c3-85fc-4d7b-92a1-8463555e2ec5)
