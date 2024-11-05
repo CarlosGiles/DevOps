@@ -39,8 +39,11 @@ Ejecutar mejor: ```jupyter lab --no-browser --ip 0.0.0.0```
 
 
 9. Instalar kernel de bash: detenemos la ejecución de Jupyter Lab con ```ctrl + C```, ```pip install bash_kernel``` y al terminar la descarga ```python -m bash_kernel.install```. Volvemos a ejecutar Jupyter lab ```jupyter lab --no-browser --ip 0.0.0.0``` y veremos la terminal de bash:
+10. 
 ![image](https://github.com/user-attachments/assets/731cf183-30c1-46c3-915c-3567a3c777ce)
 
 **CON ESTO TENEMOS LA CONFIGURACIÓN NECESARIA PARA EJECUTAR JUPYTER LAB EN DEBIAN DESDE NUESTRA TERMINAL Y ENTRANDO POR EL NAVEGADOR**
 
 Aunque estamos usando nuestro navegador para entrar a Juputer Lab, Jupyter Lab se está sirviendo desde nuestra máquina virtual con Debian.
+
+El siguiente paso sería configurar un servicio en nuestra MV con Debian para que al iniciarla, se ejecute automáticamente el servidor de Jupyter Lab y no sea necesario conectarnos por ssh a la MV para iniciar el servicio. Bastará con iniciar la MV y entrar al navegador. Jupyter lab cuenta con una terminal que ejecuta la linea de comandos de la MV directamente.
