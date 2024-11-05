@@ -17,8 +17,9 @@ cd /home/vagrant/jupyter
 ```
 4. Con el comando ```which``` podemos solicitar información sobre un programa o comando: ```which jupyter```:
 ```terminal
-/home/vagrant/.pyenv/shims//jupyter
+/home/vagrant/.pyenv/shims/jupyter
 ```
+Ahora sabemos que nuestro binario (como si fuera el .exe) que ejecuta jupyter está en esa ruta pero es una ruta interna del pyenv, la real la es la que tenemos en el archivo del paso 3.
 5. Dar permisos de ejecución al archivo **startjupyter.sh**:
 ```bash
 chmod u+x startjupyter.sh
@@ -27,4 +28,26 @@ chmod u+x startjupyter.sh
 ```bash
 ls -l startjupyter.sh
 ```
-8. 
+7. Crear archivo de configuración del servicio: la ruta para los archivos de configuración de servicios propios del sistema están en la ruta: ```/etc/systemd/system/```
+```bash
+sudo nano jupyterlab.service
+```
+8. Escribimos lo siguiente:
+```bash
+[Unit]
+Description = servicio jupyter lab
+
+[Service]
+User = vagrant
+Group = vagrant
+Environment = PATH=/home/vagrant/.pyenv/versions//3.11.10/bin:/home/vagrant/.pyenv/bin:/usr/l>
+ExecStart=/home/vagrant/startjupyter.sh
+Restart=always
+RestartSec=5
+KillSignal=SIGQUIT
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
+```
+9. 
