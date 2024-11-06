@@ -10,3 +10,5 @@ La partición principal es la raíz del sistema de archivos del sistema operativ
 * ```media``` contiene dispositivos externos.
 
 Las demás carpetas en este directorio pueden ser consultadas en la [documentación oficial](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs).
+
+[Tutorial explicación](https://privatebin.daliaempower.com/?4e19acf8acc07e10#GD6ZXBBaB3KjzK354FYCRq9eRXiscYxaSRGanH5J5BMB)
