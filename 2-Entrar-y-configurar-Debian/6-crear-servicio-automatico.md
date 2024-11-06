@@ -52,3 +52,6 @@ WantedBy=multi-user.target
 ```
 9. Ejecutar servicio: si el servicio ya existía y lo detuvimos para hacer cambios en el archivo de configuración de servicio ejecutamos ```sudo systemctl daemon-reload``` para recargar los cambios y lo ejecutamos nuevamente. En este caso creamos recién el archivo, entonces lo habilitamos con ```sudo systemctl enable jupyterlab.service```. Arrancamos el servicio con ```systemctl start jupyterlab.service```.
 10. Podemos ver el status del servicio con ```systemctl status jupyterlab.service```. Salimos de la visualización de status con la letra "q".
+11. Detener un servicio: con ```sudo systemctl stop jupyterlab.service``` y ```sudo shutdown -h now``` para apagar la MV.
+
+**EN ESTE PUNTO TENEMOS CONFIGURADA UNA APP COMO SERVICIO.**
