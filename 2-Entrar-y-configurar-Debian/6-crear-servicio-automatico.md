@@ -38,9 +38,9 @@ sudo nano jupyterlab.service
 Description = servicio jupyter lab
 
 [Service]
-User = vagrant
-Group = vagrant
-Environment = PATH=/home/vagrant/.pyenv/versions//3.11.10/bin:/home/vagrant/.pyenv/bin:/usr/l>
+User=vagrant
+Group=vagrant
+Environment=PATH=/home/vagrant/.pyenv/versions/3.11.0/bin:/home/vagrant/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 ExecStart=/home/vagrant/startjupyter.sh
 Restart=always
 RestartSec=5
