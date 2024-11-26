@@ -1,0 +1,62 @@
+--2024-11-25 20:00:01--  https://unsplash.it/1920/1080//?random
+Resolviendo unsplash.it (unsplash.it)... 135.181.133.240, 2a01:4f9:4b:24da::
+Conectando con unsplash.it (unsplash.it)[135.181.133.240]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: https://picsum.photos/1920/1080//?random [siguiendo]
+--2024-11-25 20:00:02--  https://picsum.photos/1920/1080//?random
+Resolviendo picsum.photos (picsum.photos)... 104.26.4.30, 104.26.5.30, 172.67.74.163, ...
+Conectando con picsum.photos (picsum.photos)[104.26.4.30]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: /1920/1080/?random [siguiendo]
+--2024-11-25 20:00:03--  https://picsum.photos/1920/1080/?random
+Reutilizando la conexión con picsum.photos:443.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: /1920/1080?random [siguiendo]
+--2024-11-25 20:00:03--  https://picsum.photos/1920/1080?random
+Reutilizando la conexión con picsum.photos:443.
+Petición HTTP enviada, esperando respuesta... 302 Found
+Localización: https://fastly.picsum.photos/id/886/1920/1080.jpg?hmac=Y0xgZU4RtUmKPORxvJ-un4QKDjxaLDdH_QXUJBjjIv0 [siguiendo]
+--2024-11-25 20:00:04--  https://fastly.picsum.photos/id/886/1920/1080.jpg?hmac=Y0xgZU4RtUmKPORxvJ-un4QKDjxaLDdH_QXUJBjjIv0
+Resolviendo fastly.picsum.photos (fastly.picsum.photos)... 146.75.105.91, 2a04:4e42:8a::347
+Conectando con fastly.picsum.photos (fastly.picsum.photos)[146.75.105.91]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 64027 (63K) [image/jpeg]
+Grabando a: «wallpaper-32012.jpg»
+
+     0K .......... .......... .......... .......... .......... 79%  604K 0s
+    50K .......... ..                                         100% 7.36M=0.08s
+
+2024-11-25 20:00:04 (740 KB/s) - «wallpaper-32012.jpg» guardado [64027/64027]
+
+--2024-11-25 20:01:01--  https://unsplash.it/1920/1080//?random
+Resolviendo unsplash.it (unsplash.it)... 135.181.133.240, 2a01:4f9:4b:24da::
+Conectando con unsplash.it (unsplash.it)[135.181.133.240]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: https://picsum.photos/1920/1080//?random [siguiendo]
+--2024-11-25 20:01:02--  https://picsum.photos/1920/1080//?random
+Resolviendo picsum.photos (picsum.photos)... 172.67.74.163, 104.26.5.30, 104.26.4.30, ...
+Conectando con picsum.photos (picsum.photos)[172.67.74.163]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: /1920/1080/?random [siguiendo]
+--2024-11-25 20:01:03--  https://picsum.photos/1920/1080/?random
+Reutilizando la conexión con picsum.photos:443.
+Petición HTTP enviada, esperando respuesta... 301 Moved Permanently
+Localización: /1920/1080?random [siguiendo]
+--2024-11-25 20:01:04--  https://picsum.photos/1920/1080?random
+Reutilizando la conexión con picsum.photos:443.
+Petición HTTP enviada, esperando respuesta... 302 Found
+Localización: https://fastly.picsum.photos/id/858/1920/1080.jpg?hmac=XxpcKOJURSTxqnL4ki5oEWI-RRvjXqkG6ALBGJmZZ30 [siguiendo]
+--2024-11-25 20:01:04--  https://fastly.picsum.photos/id/858/1920/1080.jpg?hmac=XxpcKOJURSTxqnL4ki5oEWI-RRvjXqkG6ALBGJmZZ30
+Resolviendo fastly.picsum.photos (fastly.picsum.photos)... 146.75.105.91, 2a04:4e42:8a::347
+Conectando con fastly.picsum.photos (fastly.picsum.photos)[146.75.105.91]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 157781 (154K) [image/jpeg]
+Grabando a: «wallpaper-31993.jpg»
+
+     0K .......... .......... .......... .......... .......... 32%  242K 0s
+    50K .......... .......... .......... .......... .......... 64%  472K 0s
+   100K .......... .......... .......... .......... .......... 97%  725K 0s
+   150K ....                                                  100% 41.2M=0.4s
+
+2024-11-25 20:01:05 (404 KB/s) - «wallpaper-31993.jpg» guardado [157781/157781]
+
