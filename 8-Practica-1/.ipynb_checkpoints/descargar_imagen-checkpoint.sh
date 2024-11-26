@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Movernos al directorio
-cd ~/imagenes
+cd /home/vagrant/jupyter/DevOps/8-Practica-1/imagenes
 
 # Generar un número aleatorio para el nombre del archivo
 NUM_ALEATORIO=$((RANDOM))
