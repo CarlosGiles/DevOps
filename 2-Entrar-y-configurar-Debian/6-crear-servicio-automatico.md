@@ -20,6 +20,7 @@ cd /home/vagrant/jupyter
 /home/vagrant/.pyenv/shims/jupyter
 ```
 Ahora sabemos que nuestro binario (como si fuera el .exe) que ejecuta jupyter está en esa ruta pero es una ruta interna del pyenv, la real la es la que tenemos en el archivo del paso 3.
+
 5. Dar permisos de ejecución al archivo **startjupyter.sh**:
 ```bash
 chmod u+x startjupyter.sh
